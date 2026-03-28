@@ -92,10 +92,10 @@ spacecraft-anomaly-detection/
 │   ├── rul_predictions.csv         # LSTM RUL predictions
 │   └── decision_log.csv            # Full autonomous decision log
 ├── notebooks/
-│   ├── day1_eda.py                 # Data loading, EDA, preprocessing
-│   ├── day2_anomaly_detection.py   # Isolation Forest, One-Class SVM, Autoencoder
-│   ├── day3_lstm_rul.py            # LSTM for RUL prediction
-│   └── day4_decision_engine.py     # Risk scoring + decision logic
+│   ├── eda.py                 # Data loading, EDA, preprocessing
+│   ├── anomaly_detection.py   # Isolation Forest, One-Class SVM, Autoencoder
+│   ├── lstm_rul.py            # LSTM for RUL prediction
+│   └── decision_engine.py     # Risk scoring + decision logic
 ├── results/
 │   ├── sensor_trends_engine1.png
 │   ├── engine_lifetimes.png
@@ -119,10 +119,10 @@ spacecraft-anomaly-detection/
 Run the scripts in order:
 
 ```bash
-python notebooks/day1_eda.py                 # Preprocess data
-python notebooks/day2_anomaly_detection.py   # Train anomaly models
-python notebooks/day3_lstm_rul.py            # Train LSTM
-python notebooks/day4_decision_engine.py     # Run decision engine
+python notebooks/eda.py                 # Preprocess data
+python notebooks/anomaly_detection.py   # Train anomaly models
+python notebooks/lstm_rul.py            # Train LSTM
+python notebooks/decision_engine.py     # Run decision engine
 ```
 
 ## ML/AI Skills Demonstrated
